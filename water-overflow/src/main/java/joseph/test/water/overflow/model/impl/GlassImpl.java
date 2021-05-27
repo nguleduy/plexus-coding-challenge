@@ -10,8 +10,8 @@ import java.util.List;
 public class GlassImpl implements Glass {
 
     private Integer capacity;
-    private Integer amount;
-    private List<GlassImpl> child = new ArrayList<>();
+    private Integer amount = 0;
+    private List<Glass> child = new ArrayList<>();
 
     @Override
     public Integer doFillWater(Integer amount) {
